@@ -9,15 +9,337 @@ body    {
     font-family: 'Open Sans', sans-serif;
 }
 
+a   {
+    text-decoration: none;
+}
+
 .bg-color-1 {
     background-color: #5EAA84;
 
     height: 15vh;
 }
 
-.bg-color   {
+.bg-color-2   {
     background-color: #E0E0DD;
 
-    height: 80vh;
+    height: 85vh;
 }
 
+/* Container */
+.container  {
+    height: 95vh;
+
+    left: 160px;
+
+    position: fixed;
+
+    top: 19px;
+    
+    width: 70%;
+}
+
+/* Sidebar */
+.sidebar-contacts   {
+    display: inline-block;
+
+    height: 100%;
+
+    position: relative;
+
+    width: 480px;
+}
+
+/* Sidebar - Toolbar */
+.toolbar-container  {
+    align-items: center;
+
+    background-color: #F0F2F5;
+
+    display: flex;
+
+    height: 60px;
+
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.user-image {
+    background-color: #DFE5E7;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    margin-left: 15px;
+
+    width: 40px;
+}
+
+.toolbar-icons  {
+    display: flex;
+
+    gap: 40px;
+
+    margin-right: 30px;
+}
+
+.toolbar-icons i    {
+    color: #54656F;
+
+    cursor: pointer;
+
+    font-size: 20px;
+}
+
+/* Sidebar - Notifications */
+.notifications-container    {
+    align-items: center;
+
+    background-color: #5EBDEB;
+
+    display: flex;
+
+    gap: 15px;
+
+    height: 90px;
+}
+
+.notifications-icon i {
+    background-color: #FFFFFF;
+
+    border-radius: 50%;
+
+    color: #5EBDEB;
+
+    font-size: 18px;
+
+    height: 45px;
+
+    line-height: 45px;
+
+    margin-left: 15px;
+
+    text-align: center;
+
+    width: 45px;
+}
+
+.notifications-alerts   {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.notifications-alerts   {
+    color: #202C33;
+
+    font-weight: 400;
+}
+
+.notifications-alerts p   {
+    font-size: 18px;
+}
+
+.notifications-alerts span   {
+    display: flex;
+
+    font-size: 14px;
+
+    gap: 5px;
+}
+
+.notifications-alerts .underline:hover   {
+    cursor: pointer;
+
+    text-decoration: underline;
+}
+
+.notifications-alerts span i   {
+    cursor: pointer;
+}
+
+/* Sidebar - Search */
+.search-container   {
+    align-items: center;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid #F0F2F5;
+
+    display: flex;
+
+    height: 55px;
+
+    justify-content: center;
+
+    width: 100%;
+}
+
+.search-container i     {
+    color: #54656F;
+
+    font-size: 14px;
+
+    position: absolute;
+
+    left: 30px;
+}
+
+.search-container input     {
+    background-color: #F0F2F5;
+
+    border: none;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    height: 35px;
+
+    padding-left: 70px;
+
+    width: 95%;
+}
+
+.search-container input::placeholder    {
+    color: #3B4A54;
+}
+
+/* Sidebar - Contacts */
+.contacts-container {
+    background-color: #FFFFFF;
+
+    display: flex;
+
+    flex-direction: column;
+
+    height: calc(100% - 205px);
+}
+
+.contact-content    {
+    align-items: center;
+
+    display: flex;
+
+    height: 78px;
+
+    position: relative;
+}
+
+.contact-content:hover  {
+    /* background-color: #F0F4F5; */
+
+
+    cursor: pointer;
+}
+
+.active-chat    {
+    background-color: #F0F4F5;
+}
+
+.contact-content img    {
+    height: 50px;
+
+    width: 50px;
+}
+
+.contact-info  {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-left: 15px;
+
+    position: relative;
+
+    width: 400px;
+}
+
+.user-info, .message-info  {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.user-info p    {
+    font-weight: 400;
+}
+
+.user-name   {
+    color: #202C33;
+
+    font-size: 18px;
+}
+
+.user-message   {
+    color: #9B9B9B;
+
+    font-size: 14px;
+}
+
+.message-info   {
+    align-items: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin-right: 10px;
+
+    justify-content: center;
+}
+
+.line   {
+    background-color: #F0F4F5;
+
+    bottom: 10px;
+
+    height: 1px;
+
+    left: 80px;
+
+    position: absolute;
+
+    top: 78px;
+
+    width: 400px;
+}
+
+.active     {
+    color: #5EBDEB;;
+}
+
+.message-info .message-horary {
+    color: #9B9B9B;
+
+    font-size: 12px;
+}
+
+.read-message   {
+    padding-top: 10px;
+}
+
+.unread-message     {
+    background-color: #7BD566;
+
+    border-radius: 50%;
+
+    color: #FFFFFF;
+
+    font-size: 14px;
+
+    height: 20px;
+
+    line-height: 20px;
+
+    margin-left: 15px;
+
+    text-align: center;
+
+    width: 20px;
+}
