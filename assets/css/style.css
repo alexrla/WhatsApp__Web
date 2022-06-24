@@ -71,6 +71,8 @@ a   {
 
     cursor: pointer;
 
+    height: 40px;
+
     margin-left: 15px;
 
     width: 40px;
@@ -126,24 +128,22 @@ a   {
 }
 
 .notifications-alerts   {
+    color: #202C33;
+
     display: flex;
 
     flex-direction: column;
 
-    gap: 8px;
-}
-
-.notifications-alerts   {
-    color: #202C33;
-
     font-weight: 400;
+
+    gap: 8px;
 }
 
 .notifications-alerts p   {
     font-size: 18px;
 }
 
-.notifications-alerts span   {
+.notifications-alerts div  {
     display: flex;
 
     font-size: 14px;
@@ -151,14 +151,14 @@ a   {
     gap: 5px;
 }
 
-.notifications-alerts .underline:hover   {
+.notifications-alerts div i   {
+    cursor: pointer;
+}
+
+.underline:hover   {
     cursor: pointer;
 
     text-decoration: underline;
-}
-
-.notifications-alerts span i   {
-    cursor: pointer;
 }
 
 /* Sidebar - Search */
@@ -297,8 +297,6 @@ a   {
 .line   {
     background-color: #F0F4F5;
 
-    bottom: 10px;
-
     height: 1px;
 
     left: 80px;
@@ -314,7 +312,7 @@ a   {
     color: #5EBDEB;;
 }
 
-.message-info .message-horary {
+.message-horary {
     color: #9B9B9B;
 
     font-size: 12px;
