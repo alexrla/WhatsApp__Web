@@ -1,0 +1,23 @@
+/* Base */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*   {
+    box-sizing: border-box;
+}
+
+body    {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.bg-color-1 {
+    background-color: #5EAA84;
+
+    height: 15vh;
+}
+
+.bg-color   {
+    background-color: #E0E0DD;
+
+    height: 80vh;
+}
+
